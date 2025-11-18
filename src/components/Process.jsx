@@ -11,16 +11,16 @@ const steps = [
 
 function Process() {
   return (
-    <section className="relative bg-slate-950">
+    <section className="relative bg-white">
       <div className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight">Our Process</h2>
+        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight">Our Process</h2>
 
         <ol className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {steps.map((s) => (
-            <li key={s.n} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <div className="text-xs text-white/70">Step {s.n}</div>
-              <h3 className="mt-2 text-lg font-semibold text-white">{s.t}</h3>
-              <p className="mt-2 text-sm text-slate-300 leading-relaxed">{s.d}</p>
+            <li key={s.n} className="rounded-2xl border border-gray-200 bg-white p-6">
+              <div className="text-xs text-gray-600">Step {s.n}</div>
+              <h3 className="mt-2 text-lg font-semibold text-gray-900">{s.t}</h3>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">{s.d}</p>
             </li>
           ))}
         </ol>

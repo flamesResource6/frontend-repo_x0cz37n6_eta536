@@ -17,15 +17,15 @@ const points = [
 
 function Differentiators() {
   return (
-    <section className="relative bg-slate-950">
+    <section className="relative bg-white">
       <div className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight">What Makes Mudrik Different</h2>
+        <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight">What Makes Mudrik Different</h2>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {points.map((p) => (
-            <div key={p.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-              <h3 className="text-lg font-semibold text-white">{p.title}</h3>
-              <p className="mt-2 text-sm text-slate-300 leading-relaxed">{p.desc}</p>
+            <div key={p.title} className="rounded-2xl border border-gray-200 bg-white p-6">
+              <h3 className="text-lg font-semibold text-gray-900">{p.title}</h3>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
